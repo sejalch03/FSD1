@@ -21,7 +21,7 @@ console.log(result);
 */
 /*let key="sname";
 const students=[{
-    sname:"amit",
+    sname:"amit", 
     course:"btech",
     college:"abes ec"
 },
