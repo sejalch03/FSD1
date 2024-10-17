@@ -69,8 +69,59 @@ return data;
 }
 let data1= selectlang("c");
 console.log(data1);
-    */
-   console.log("hellooooooo");
-   let parent= document.getElementsByClassName("parent");
-   console.log(parent);
-   parent[0].innerHTML="<h2 STYLE=color:brown>data was changed</h2>";
+  
+
+let parent= document.getElementsByClassName("parent");
+console.log(parent);
+
+const h1=document.createElement("h1");
+console.log(h1);
+h1.innerText="abes engineering college";
+console.log(h1);
+h1.style.backgroundColor="cyan";
+h1.style.color="red";
+h1.style.padding="20px";
+h1.style.marginLeft="300px";
+parent[0].appendChild(h1);
+const img=document.createElement("img");
+img.src="../images/ama star.png";
+console.log(img);
+img.setAttribute("height","300");
+img.setAttribute("width","500");
+parent[]/
+
+function getData(){
+    console.log("Hi,inside getdata function");
+    parent[0].innerHTML="<h2 style=color:yellow >hello getdata function</h2>";
+}
+const button=document.getElementsByClassName("btn")
+console.log(button);
+button[0].addEventListener("click",getData);*
+const promise=new Promise((resolve,reject)=>{
+    let a=5;
+    if(a>10){
+        resolve("accepted");
+    }
+    else{
+        reject("not accepted");
+    }
+
+})
+promise.then((msg)=>{console.log(msg)})
+.catch((error)=>{console.log(error)})
+.finally(()=>console.log("all resources have closed"));
+const promise2=new Promise((resolve,reject)=>{
+    resolve({name:"SEJAL CHAUHAN",Stack:"MERN STACK"});
+
+})
+promise2.then((data)=>{console.log("Hi,"+data.name)})
+.catch(x=>{console.log(x)})*/
+const response=fetch("https://dummyjson.com/products");
+response.then((data)=>{
+    console.log(data);
+    data.json().then((res)=>{
+        console.log(res);
+
+    })
+})
+
